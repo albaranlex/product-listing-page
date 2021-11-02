@@ -1,27 +1,29 @@
 import React from "react";
-import product_card from "../data/products";
 
-const Product = () => {
-  // console.log(product_card);
-  const listItems = product_card.map((item) => (
-    <div className="card" key={item.id}>
+export default function Product(props) {
+  const { product, onAdd } = props;
+  return (
+    <div className="card" onClick={() => onAdd(product)}>
       <div className="card_img">
-        <img src={item.thumb} />
+        <img src={product.image} alt={product.name} />
+      </div>
+      <div className="card_details">
+        <div className="card_description">
+          <h2>{product.name}</h2>
+          <p>{product.description}</p>
+          <p>
+            {product.currency}
+            {product.price}
+          </p>
+        </div>
+        <div className="overlay">
+          <div className="text">&#8595; Calorie, &#8595; Carb, Vegan</div>
+        </div>
       </div>
 
-      <div className="card_header">
-        <h2>{item.product_name}</h2>
-        <p>{item.description}</p>
-        <p className="price">
-          {item.price}
-          <span>{item.currency}</span>
-        </p>
-        <div className="btn">+</div>
+      <div className="card_button">
+        <button>Add To Cart</button>
       </div>
     </div>
-  ));
-
-  return <div className="products">{listItems}</div>;
-};
-
-export default Product;
+  );
+}

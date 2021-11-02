@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { GrBasket, GrMenu } from "react-icons/gr";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <nav>
       <div className="logo">S / P</div>
@@ -14,8 +14,16 @@ export default function Header() {
       </ul>
       <div className="basket_menu">
         <div className="basket">
-          <GrBasket color="white" />
+          <a href="#/cart">
+            <GrBasket />{" "}
+            {props.countCartItems ? (
+              <button className="badge">{props.countCartItems}</button>
+            ) : (
+              ""
+            )}
+          </a>{" "}
         </div>
+
         <div className="menu">
           <GrMenu />
         </div>

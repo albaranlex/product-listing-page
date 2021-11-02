@@ -62,18 +62,25 @@ nav {
   }
 }
 
-@media screen and (max-width: 800px) {
-  nav.responsive {
-    position: relative;
-  }
-  nav.responsive .logo {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+// @media screen and (max-width: 800px) {
+//   nav.responsive {
+//     position: relative;
+//   }
+//   nav.responsive .logo {
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//   }
+//   nav ul li {
+//     float: none;
+//     display: block;
+//     text-align: left;
+//   }
+// }
+
+button.badge {
+  background-color: #f04040;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
 }
