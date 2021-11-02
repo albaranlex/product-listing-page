@@ -5,7 +5,7 @@ const product_card = [
     description: "Carb Fuel on the Go!",
     price: 12,
     currency: "€",
-    thumb: "./images/1.png",
+    thumb: "./images/01.png",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const product_card = [
     description: "A perfect start for the day",
     price: 15,
     currency: "€",
-    thumb: "./images/2.png",
+    thumb: "./images/02.png",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const product_card = [
     description: "A great mix of sweet and citrus.",
     price: 18,
     currency: "€",
-    thumb: "./images/3.png",
+    thumb: "./images/03.png",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const product_card = [
     description: "Classic with a twist.",
     price: 16,
     currency: "€",
-    thumb: "./images/1.png",
+    thumb: "./images/04.png",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const product_card = [
     description: "Just the right push to a fitter you.",
     price: 15,
     currency: "€",
-    thumb: "./images/2.png",
+    thumb: "./images/05.png",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const product_card = [
     description: "Perfect even for non vegans!",
     price: 16,
     currency: "€",
-    thumb: "./images/3.png",
+    thumb: "./images/06.png",
   },
 ];
 export default product_card;
