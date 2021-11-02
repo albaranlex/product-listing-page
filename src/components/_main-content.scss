@@ -1,10 +1,29 @@
-.bg {
+.App {
+  background-color: rgb(211, 145, 117);
+  position: relative;
+}
+
+.front {
+  position: absolute;
+  z-index: 1;
+}
+
+.circle {
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   border-radius: 0 0 100% 100%;
-  background-color: yellow;
+  position: absolute;
+  margin-top: -40vh;
+  background-color: #cbddc3;
+  z-index: 0;
 }
+
+// .square {
+//   width: 100vw;
+//   height: 15vh;
+//   background-color: $secondary;
+// }
 
 .main_content {
   position: relative;
@@ -19,14 +38,7 @@
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.main_content h3 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #2d343e;
-  font-size: 10.5vw;
+  z-index: 1;
 }
 
 .main_content .card {

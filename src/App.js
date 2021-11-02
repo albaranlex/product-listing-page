@@ -6,9 +6,13 @@ import "./scss/main.scss";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <MainContent />
-      <Footer />
+      <div className="front">
+        <Header />
+        <MainContent />
+        <Footer />
+      </div>
+      <div className="circle"></div>
+      <div className="square"></div>
     </div>
   );
 }
