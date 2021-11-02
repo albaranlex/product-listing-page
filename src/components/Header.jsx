@@ -1,5 +1,5 @@
 import React from "react";
-import { GrBasket } from "react-icons/gr";
+import { GrBasket, GrMenu } from "react-icons/gr";
 
 export default function Header() {
   return (
@@ -12,8 +12,13 @@ export default function Header() {
         <li>About us</li>
         <li className="contact">Contact us</li>
       </ul>
-      <div className="basket">
-        <GrBasket color="white" />
+      <div className="basket_menu">
+        <div className="basket">
+          <GrBasket color="white" />
+        </div>
+        <div className="menu">
+          <GrMenu />
+        </div>
       </div>
     </nav>
   );

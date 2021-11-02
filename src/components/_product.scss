@@ -8,7 +8,6 @@
 }
 
 .circle {
-  overflow: hidden;
   width: 100vw;
   height: 80vh;
   border-radius: 0 0 100% 100%;
@@ -110,12 +109,6 @@
   overflow: hidden;
 }
 
-@media (max-width: 600px) {
-  .products {
-    flex-direction: column;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .products {
     flex-direction: column;
@@ -128,5 +121,9 @@
   }
   .products .card .card_img img {
     width: 30vw;
+  }
+  .circle {
+    width: 100vw;
+    height: 65vh;
   }
 }
