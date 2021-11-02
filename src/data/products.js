@@ -1,0 +1,51 @@
+const product_card = [
+  {
+    id: 1,
+    product_name: "Instant Pot-Sushi Rice",
+    description: "Carb Fuel on the Go!",
+    price: 12,
+    currency: "€",
+    thumb: "./images/1.png",
+  },
+  {
+    id: 2,
+    product_name: "The Perfect Nourishing Bowl",
+    description: "A perfect start for the day",
+    price: 15,
+    currency: "€",
+    thumb: "./images/2.png",
+  },
+  {
+    id: 3,
+    product_name: "Farro & Pepita Lime Sauce",
+    description: "A great mix of sweet and citrus.",
+    price: 18,
+    currency: "€",
+    thumb: "./images/3.png",
+  },
+  {
+    id: 4,
+    product_name: "Easy Caesar Salad",
+    description: "Classic with a twist.",
+    price: 16,
+    currency: "€",
+    thumb: "./images/1.png",
+  },
+  {
+    id: 5,
+    product_name: "Salad and Greens",
+    description: "Just the right push to a fitter you.",
+    price: 15,
+    currency: "€",
+    thumb: "./images/2.png",
+  },
+  {
+    id: 6,
+    product_name: "Vegan Buddha Bowl",
+    description: "Perfect even for non vegans!",
+    price: 16,
+    currency: "€",
+    thumb: "./images/3.png",
+  },
+];
+export default product_card;
