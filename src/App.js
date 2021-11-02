@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Landing from "./components/Landing";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Products from "./components/Products";
 import Footer from "./components/Footer";
 import Basket from "./components/Basket";
 import data from "./data/products";
@@ -40,7 +40,7 @@ function App() {
         <Header />
         <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
         <Landing />
-        <Main products={products} onAdd={onAdd} />
+        <Products products={products} onAdd={onAdd} />
         <Footer />
       </div>
       <div className="circle"></div>

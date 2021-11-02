@@ -17,7 +17,14 @@ export default function Product(props) {
           </p>
         </div>
         <div className="overlay">
-          <div className="text">&#8595; Calorie, &#8595; Carb, Vegan</div>
+          <div className="text">
+            <ul>
+              <li>Calories: {product.calorie}g</li>
+              <li>Carbs: {product.carbs}g</li>
+              <li>Fat: {product.fat}g</li>
+              <li>Protein: {product.protein}g</li>
+            </ul>
+          </div>
         </div>
       </div>
 

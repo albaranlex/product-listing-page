@@ -95,10 +95,12 @@ main {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #de1515;
+  background-color: $primary;
 }
 
 .text {
+  display: flex;
+  flex-wrap: wrap;
   color: gray;
   font-size: 15px;
   position: absolute;
@@ -108,6 +110,9 @@ main {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  ul {
+    list-style: none;
+  }
 }
 
 .card_button {
