@@ -1,3 +1,4 @@
+import Landing from "./components/Landing";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <div className="front">
         <Header />
+        <Landing />
         <MainContent />
         <Footer />
       </div>

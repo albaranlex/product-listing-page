@@ -1,0 +1,24 @@
+.landing_wrapper {
+  width: 95vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  .landing_heading_text {
+    width: 100vw;
+    @include flex-center;
+    font-size: 10vw;
+    position: absolute;
+    z-index: 0;
+  }
+  .landing_heading_img {
+    width: 100vw;
+    @include flex-center;
+    position: absolute;
+    z-index: 1;
+    img {
+      width: 55%;
+      height: 75%;
+    }
+  }
+}
