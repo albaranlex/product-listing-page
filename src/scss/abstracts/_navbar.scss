@@ -2,9 +2,9 @@
 
 .navbar {
   @include media("<=phone") {
-  top: -500px;
-  left: 180px;
-}
+    top: -500px;
+    left: 180px;
+  }
   height: 100%;
   position: absolute;
   top: 0;
