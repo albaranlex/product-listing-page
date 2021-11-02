@@ -1,6 +1,6 @@
 import Landing from "./components/Landing";
 import Header from "./components/Header";
-import MainContent from "./components/MainContent";
+import Product from "./components/Product";
 import Footer from "./components/Footer";
 import "./scss/main.scss";
 
@@ -10,7 +10,7 @@ function App() {
       <div className="front">
         <Header />
         <Landing />
-        <MainContent />
+        <Product />
         <Footer />
       </div>
       <div className="circle"></div>

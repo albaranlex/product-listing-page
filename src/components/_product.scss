@@ -1,0 +1,132 @@
+.App {
+  position: relative;
+}
+
+.front {
+  position: absolute;
+  z-index: 1;
+}
+
+.circle {
+  overflow: hidden;
+  width: 100vw;
+  height: 80vh;
+  border-radius: 0 0 100% 100%;
+  position: absolute;
+  margin-top: -40vh;
+  background-color: #cbddc3;
+  z-index: 0;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.products .card {
+  width: 30vw;
+  height: 40%;
+  border: 3px solid $dark-bg;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+  // margin-bottom: 50px;
+}
+
+.products .card .card_img {
+  @include flex-center;
+  margin-top: -10vw;
+}
+
+.products .card .card_img img {
+  width: 16vw;
+}
+
+.products .card .card_header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: $primary;
+  margin: 25px 0;
+}
+
+.products .card .card_header h2 {
+  font-size: 18px;
+}
+
+.products .card .card_header p {
+  font-size: 14px;
+  text-align: center;
+  color: $secondary;
+  margin: 8px 0;
+}
+
+.products .card .card_header .price {
+  font-size: 25px;
+  color: #fe8033;
+}
+
+.products .card .card_header .price span {
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.products .card:hover {
+  background-color: $dark-bg;
+  color: $primary;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.products .card:hover .btn {
+  background-color: $primary;
+  color: #fff;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  border-radius: 35px;
+  background-color: $primary;
+  color: $dark-bg;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .products {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .products {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .products .card {
+    min-width: 60vw;
+  }
+  .products .card .card_img img {
+    width: 30vw;
+  }
+}

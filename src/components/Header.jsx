@@ -1,13 +1,10 @@
 import React from "react";
-import { AiOutlineSearch } from "react-icons/ai";
 import { GrBasket } from "react-icons/gr";
 
 export default function Header() {
-  let iconStyles = { color: "white", fontSize: "1.2em" };
-
   return (
     <nav>
-      <div className="logo">Super Bowl</div>
+      <div className="logo">S / P</div>
       <ul>
         <li>Home</li>
         <li>Products</li>

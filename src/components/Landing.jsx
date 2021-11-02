@@ -10,6 +10,9 @@ export default function Landing() {
       <div className="landing_heading_img">
         <img src={main_img} />
       </div>
+      <div className="landing_button">
+        <button>Order Here </button>
+      </div>
     </div>
   );
 }

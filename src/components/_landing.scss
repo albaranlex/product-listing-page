@@ -21,4 +21,18 @@
       height: 75%;
     }
   }
+  .landing_button {
+    position: absolute;
+    bottom: 20%;
+    left: 47%;
+    button {
+      width: 120px;
+      height: 40px;
+      border: none;
+      border-radius: 50px;
+      background-color: $dark-bg;
+      color: $primary;
+      font-weight: bolder;
+    }
+  }
 }
