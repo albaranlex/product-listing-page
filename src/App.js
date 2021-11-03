@@ -4,11 +4,13 @@ import Header from "./components/Header";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
 import Basket from "./components/Basket";
-import data from "./data/products";
+import products from "./data/products";
 import "./scss/main.scss";
 
 function App() {
-  const { products } = data;
+  //infinity scroll//
+
+  //Cart
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
@@ -34,13 +36,21 @@ function App() {
       );
     }
   };
+
   return (
     <div className="App">
       <div className="front">
         <Header />
-        <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+        <Basket
+          cartItems={cartItems}
+          onAdd={onAdd}
+          onRemove={onRemove}
+          countCartItems={cartItems.length}
+        />
         <Landing />
+
         <Products products={products} onAdd={onAdd} />
+
         <Footer />
       </div>
       <div className="circle"></div>

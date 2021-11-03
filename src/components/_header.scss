@@ -11,8 +11,10 @@ nav {
     text-transform: uppercase;
     color: $highlight;
   }
+}
+.links {
   ul {
-    margin: 0;
+    margin-left: 0;
     padding: 0;
     list-style-type: none;
     li {
@@ -37,18 +39,12 @@ nav {
   color: white;
 }
 
-.basket_menu {
-  @include flex-center;
-  .basket {
-    margin-right: 20px;
-  }
-  .menu {
-    display: none;
-  }
+nav .menu {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
-  .basket_menu .menu {
+  nav .menu {
     display: block;
   }
 }
@@ -62,25 +58,3 @@ nav {
   }
 }
 
-// @media screen and (max-width: 800px) {
-//   nav.responsive {
-//     position: relative;
-//   }
-//   nav.responsive .logo {
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//   }
-//   nav ul li {
-//     float: none;
-//     display: block;
-//     text-align: left;
-//   }
-// }
-
-button.badge {
-  background-color: #f04040;
-  border: none;
-  color: #ffffff;
-  width: 1.5rem;
-}

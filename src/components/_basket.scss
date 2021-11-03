@@ -1,0 +1,50 @@
+.cart_wrapper {
+  width: 50%;
+  margin: 20px;
+  position: fixed;
+  top: 0.2%;
+  right: 2%;
+  z-index: 4;
+  padding: 10px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart_show {
+  position: absolute;
+  right: 2.9%;
+  top: 2.5vh;
+  background-color: $primary;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.cart_products {
+  button {
+    font-size: 8px;
+    width: 2vw;
+    border: none;
+    background-color: $dark-bg;
+    color: $primary;
+  }
+}
+
+button.badge {
+  position: absolute;
+  background-color: #f04040;
+  border-radius: 50%;
+  border: none;
+  color: #ffffff;
+  width: 15px;
+  height: 15px;
+  font-size: 8px;
+}
+
+.basket {
+  cursor: pointer;
+}
+
+.basket:hover {
+  color: red;
+}

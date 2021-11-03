@@ -1,7 +1,53 @@
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.product_filter {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 5vw;
+
+  .filter_label {
+    @include flex-center;
+    h3 {
+      align-self: center;
+    }
+  }
+  .filter_buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter_buttons button {
+    background-color: $dark-bg;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 15vw;
+    height: 30px;
+    margin: 0.7vw;
+    font-size: 12px;
+  }
+}
+
+.filter_buttons button:hover {
+  background-color: $light-bg;
+  color: $dark-bg;
+  transform: translateY(-14%);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.product_show {
+  @include flex-center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100vw;
@@ -9,4 +55,13 @@ main {
   padding: 50px 0 0;
   box-sizing: border-box;
   z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .product_filter {
+    flex-direction: column;
+  }
+  .filter_buttons {
+    @include flex-center;
+  }
 }
