@@ -8,7 +8,7 @@ nav {
     text-align: left;
     font-size: 20px;
     margin: 20px 0px;
-    margin-left: 20px;
+    margin-left: 35px;
     color: $highlight;
   }
 }
@@ -46,8 +46,8 @@ nav .menu {
 @media screen and (max-width: 800px) {
   nav .menu {
     display: block;
-    margin-right: 15vw;
-    margin-left: 10px;
+    margin-right: 10vw;
+    margin-left: 25px;
   }
   nav ul li {
     display: none;
