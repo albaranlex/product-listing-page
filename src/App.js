@@ -8,20 +8,6 @@ import products from "./data/products";
 import "./scss/main.scss";
 
 function App() {
-  //infinity scroll
-  const [productArr, setProductArr] = useState(products);
-
-  window.onscroll = function () {
-    if (
-      window.scrollY + window.innerHeight >=
-      document.documentElement.scrollHeight
-    ) {
-      let arr = productArr.concat(products);
-      setProductArr(arr);
-      console.log(productArr);
-    }
-  };
-
   //Cart
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
@@ -60,11 +46,10 @@ function App() {
           countCartItems={cartItems.length}
         />
         <Landing />
-        <Products products={productArr} onAdd={onAdd} />
+        <Products products={products} onAdd={onAdd} />
         <Footer />
       </div>
       <div className="circle"></div>
-      <div className="square"></div>
     </div>
   );
 }
