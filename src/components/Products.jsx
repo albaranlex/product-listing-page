@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Product from "./Product";
 
 export default function Products(props) {
+  //filter
   const [category, setCategory] = useState("All");
   const { products, onAdd } = props;
   return (
