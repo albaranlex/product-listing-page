@@ -19,7 +19,7 @@
   border-radius: 0 0 100% 100%;
   position: absolute;
   margin-top: -40vh;
-  background-color: #cbddc3;
+  background-color: $circle-bg;
   z-index: 0;
 }
 
@@ -68,12 +68,12 @@
   h2 {
     text-align: center;
     font-size: 18px;
-    color: rgb(31, 31, 31);
+    color: $black;
   }
   p {
     font-size: 14px;
     text-align: center;
-    color: gray;
+    color: $sub-text;
     margin: 8px 0;
   }
 }
@@ -94,7 +94,7 @@
 .text {
   display: flex;
   flex-wrap: wrap;
-  color: gray;
+  color: $sub-text;
   font-size: 15px;
   position: absolute;
   top: 50%;
@@ -119,10 +119,6 @@
     background-color: $dark-bg;
     color: $primary;
     cursor: pointer;
-    :hover {
-      background-color: $primary;
-      color: #fff;
-    }
   }
 }
 

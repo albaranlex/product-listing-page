@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Landing from "./components/Landing";
 import Header from "./components/Header";
 import Products from "./components/Products";
-import Footer from "./components/Footer";
 import Basket from "./components/Basket";
 import products from "./data/products";
 import "./scss/main.scss";
@@ -47,7 +46,6 @@ function App() {
         />
         <Landing />
         <Products products={products} onAdd={onAdd} />
-        <Footer />
       </div>
       <div className="circle"></div>
     </div>

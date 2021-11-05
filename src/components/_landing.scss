@@ -10,6 +10,10 @@
     font-size: 10vw;
     position: absolute;
     z-index: 0;
+    color: $black;
+    span {
+      z-index: 10;
+    }
   }
   .landing_heading_img {
     width: 100vw;
@@ -40,6 +44,7 @@
     }
   }
 }
+
 .landing_button button:hover {
   background-color: $light-bg;
   color: $dark-bg;

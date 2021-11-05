@@ -4,7 +4,6 @@ import Product from "./Product";
 export default function Products(props) {
   const { products, onAdd } = props;
   const [productArr, setProductArr] = useState(products);
-  const [category, setCategory] = useState("All");
 
   //infinity scroll
   window.onscroll = function () {
@@ -12,7 +11,7 @@ export default function Products(props) {
       window.scrollY + window.innerHeight >=
       document.documentElement.scrollHeight
     ) {
-      setProductArr(productArr.concat(products));
+      setProductArr(productArr.concat(productArr));
     }
   };
 
@@ -29,8 +28,11 @@ export default function Products(props) {
               <button
                 type="button"
                 onClick={() => {
-                  setCategory(cat);
-                  console.log(productArr);
+                  let filteredArr = products.filter((item) =>
+                    cat === "All" ? item : item.category === cat
+                  );
+                  setProductArr(filteredArr);
+                  console.log(filteredArr);
                 }}
                 className="btn"
               >
@@ -42,23 +44,9 @@ export default function Products(props) {
       </div>
 
       <div className="product_show">
-        {category === "All"
-          ? productArr.map((product) => (
-              <Product
-                key={product.id}
-                product={product}
-                onAdd={onAdd}
-              ></Product>
-            ))
-          : productArr
-              .filter((product) => product.category === category)
-              .map((product) => (
-                <Product
-                  key={product.id}
-                  product={product}
-                  onAdd={onAdd}
-                ></Product>
-              ))}
+        {productArr.map((product, i) => (
+          <Product key={i} product={product} onAdd={onAdd} />
+        ))}
       </div>
     </main>
   );

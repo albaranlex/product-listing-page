@@ -32,10 +32,10 @@
 
 button.badge {
   position: absolute;
-  background-color: #f04040;
+  background-color: $badge;
   border-radius: 50%;
   border: none;
-  color: #ffffff;
+  color: $primary;
   width: 15px;
   height: 15px;
   font-size: 8px;
@@ -43,8 +43,4 @@ button.badge {
 
 .basket {
   cursor: pointer;
-}
-
-.basket:hover {
-  color: red;
 }

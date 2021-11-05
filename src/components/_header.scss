@@ -36,12 +36,14 @@ nav {
   width: 150px;
   background-color: $light-bg;
   opacity: 80%;
-  color: white;
+  color: $primary;
 }
 
 nav .menu {
   display: none;
 }
+
+// side nav
 
 @media screen and (max-width: 800px) {
   nav .menu {
@@ -53,7 +55,6 @@ nav .menu {
     display: none;
   }
   .nav .logo {
-    background-color: red;
     text-align: center;
   }
 }
